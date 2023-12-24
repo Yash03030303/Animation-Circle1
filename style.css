@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+div{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    background-color: transparent;
+    border-top: 60px solid rgb(15, 7, 232);
+    border-left: 60px solid rgb(204, 238, 10);
+    border-bottom:60px solid green;
+    border-right: 60px solid rgb(247, 10, 26);
+}
+div:hover{
+    animation:cir 0.5s linear infinite;
+}
+@keyframes cir {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
+}
